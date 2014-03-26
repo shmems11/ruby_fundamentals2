@@ -6,9 +6,9 @@ grocery_list.each do |item|
   puts "* " + item
   end
 
-def list(groceries)
-  groceries.each do |item| 
-    puts "* " + item
+def list(grocery_list)
+  grocery_list.each do |item| 
+    puts "* " + item.to_s
   end
 end
 
@@ -22,3 +22,9 @@ else
 end
 
 puts grocery_list[1]
+
+grocery_list.sort!
+list(grocery_list)
+
+grocery_list.delete("rice")
+list(grocery_list)
