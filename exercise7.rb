@@ -18,3 +18,6 @@ students.each do |k,v|
 	v=(v * 0.05) + v
 	puts "#{k}: #{v} students"
 	end 
+
+students.delete(:cohort2)
+num_students(students)
